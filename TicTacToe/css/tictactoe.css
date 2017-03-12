@@ -1,0 +1,91 @@
+body {
+	background-color: #B2DFDB;
+	padding: 0px;
+	margin : 0px;
+}
+
+h1 {
+	font-family:"Comic Sans MS", cursive, sans-serif;
+	font-weight: bold;
+	color : #00695C;
+	font-size:60px;
+}
+.cell {
+	width:80px;
+	height:80px;
+	text-align:center;
+	font-weight:bold;
+	font-size: 35px;
+}
+
+#tb1 {
+	border-collapse: collapse;
+	border: 5px solid black;
+	background-color : #26A69A;
+}
+
+#startButton {
+	background-color: #00695C; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius:10px;
+}	
+
+#resetButton {
+	background-color: #00695C;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius:10px;
+}
+
+#table {
+	display : none;
+	font-family: Arial;
+}
+
+/* for mobile phones: */
+[class*="col-"]{
+	width:100%;
+}
+
+/* for tablets: */
+@media only screen and (min-width: 600px) {
+	.col-m-12 {width: 100%;}
+}
+
+
+/* for desktops: */
+@media only screen and (min-width: 768px){
+	.col-12 {width : 100%;
+	}
+}
+
+@media only screen and (orientation: portrait) {
+	body {
+		background-color: #F0F4C3;
+	}
+	h1 {
+		color: #827717
+	}
+	#tb1 {
+		background-color: #CDDC39;
+	}
+
+	#startButton {
+		background-color: #827717;
+	}
+
+	#resetButton {
+		background-color: #827717;
+	}
+}

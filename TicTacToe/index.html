@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<head>
+	<title>Tic Tac Toe Game</title>
+	<link rel = "stylesheet" href="css/tictactoe.css" type="text/css" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src = "js/tictactoe.js"></script>
+</head>
+
+<body onload = "startGame();">
+	<main class = "mainclass" align = "center">
+		<div>
+		<h1>Tic Tac Toe</h1>
+		<br>
+		</div>
+
+		<div>
+			<button id="startButton" type="button" onclick="viewTable();">Start Game</button>
+		</div>
+
+		<div id = "table">
+			<h3 id = "message"></h3>
+			<div class="row">
+				<div class="col-12 col-m-12">
+					<table id="tb1" border = '3' align="center">
+						<tr id = "tr1">
+							<td id = "td1" class="cell" onclick="nextMove(this);"></td>
+							<td id = "td2" class="cell" onclick="nextMove(this);"></td>
+							<td id = "td3" class="cell" onclick="nextMove(this);"></td>
+						</tr>
+						<tr id = "tr2">
+							<td id = "td4" class="cell" onclick="nextMove(this);"></td>
+							<td id = "td5" class="cell" onclick="nextMove(this);"></td>
+							<td id = "td6" class="cell" onclick="nextMove(this);"></td>
+						</tr>
+						<tr id = "tr3">
+							<td id = "td7" class="cell" onclick="nextMove(this);"></td>
+							<td id = "td8" class="cell" onclick="nextMove(this);"></td>
+							<td id = "td9" class="cell" onclick="nextMove(this);"></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<br><br>
+			<button  id = "resetButton" type="button" onclick="resetAll();">Reset</button>
+			<br><br>
+			
+		</div>
+
+	</main>
+
+</body>
